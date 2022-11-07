@@ -1,0 +1,299 @@
+header{
+	background: #BBBBBB;
+	padding:  20px 0;
+}
+
+.caixa{
+	position: relative;
+	width: 940px;
+	margin:  0 auto;
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a{
+	text-transform: uppercase;
+	color:  #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
+	font-size: 23px;
+}
+
+.produtos{
+	width: 940px;
+	margin:  0 auto;
+	padding: 55px 0;
+}
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin:  0 1.5%;
+	padding: 30px 20px;
+	box-sizing:  border-box;
+	border:  2px solid #000000;
+	border-radius: 10px;
+
+}
+
+.produtos li:hover{
+	border-color: #C78C19;
+}
+
+.produtos li:active{
+	border-color: #088C19;
+}
+
+.produtos li:hover h2{
+	font-size: 34px;
+}
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+.produto-descricao{
+	font-size: 18px;
+}
+
+.produto-preco{
+	font-weight: bold;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+footer{
+	text-align: center;
+	background: url(bg.jpg);
+	padding: 40px 0;
+}
+
+.copyright{
+	color:  #FFFFFF;
+	font-size: 13px;
+	margin: 20px;
+}
+
+main {
+	
+
+}
+
+form{
+	margin:  40px 0;
+
+}
+
+form label, form p{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao{
+	display: block;
+	margin: 0 0 10px;
+	padding:  10px 25px;
+	width:  50%;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+.enviar{
+	width: 160px; /*Tamanho do botão de 160px*/
+	padding: 15px 0; /*Espaçamento de 15px*/
+	background: orange; /*Fundo do botão em laranja*/
+	color: white; /*Cor do texto branco*/
+	font-weight: bold; /*Texto em negrito*/
+	font-size: 16px; /*Tamanho da letra de 16px*/
+	border: none; /*Retira a borda*/
+	border-radius: 5px; /*Arredonda a borda em 5px*/
+	transition: 1s background; /*Demora 1 segundo para a cor do botão mudar*/
+	cursor: pointer; /*Cursor vira uma mãozinha ao invés da seta do mouse*/
+}
+
+.enviar:hover{
+	background: darkorange; /*Fundo do botão muda para laranja escuro quando o mouse está por cima*/
+	transform: scale(1.2); /*Aumenta o botão quando o mouse está por cima*/
+
+}
+
+table{
+	margin: 20px 0 40px;
+}
+
+thead{
+	background: #555555;
+	color:  white;
+	font-weight: bold;
+}
+
+Td, th{
+	border:  1px solid #000000;
+	padding: 8px 15px;
+}
+
+.banner{ /*CSS da página incial*/
+	width: 100%;
+	margin: 0 0 1em;
+
+}
+
+.titulo-principal{
+	text-align: center; /*Texto alinhado no centro*/
+	font-size: 2em;
+	margin: 0 0 1em;
+	
+}
+
+.principal{
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+.principal p{
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	font-weight: bold; /*Texto em negrito*/
+}
+
+.principal em{
+	font-style: italic; /*Texto em italico*/
+}
+
+.titulo2{
+	text-align: center; /*Texto alinhado no centro*/
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+
+	
+}
+
+.imagembeneficios{
+	width: 60%;
+	box-shadow: 10px 10px 0px #000000; /*Coloca sombra na imagem*/
+} 
+
+.conteudobeneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.listabeneficios{
+	width:  40%;
+	display: inline-block; /*Coloca o texto ao lado da imagem*/
+	vertical-align: top;
+}
+
+.itens{
+	line-height: 1.5;
+}
+
+.itens:first-child{ /*Primeiro item da lista*/
+	font-weight: bold;
+
+}
+
+.itens:before{ /*TAG apenas do CSS para adicionar um unicode*/
+	content: "★";
+}
+
+.utensilios{
+	width: 150px;
+	float: left; /*Coloca a imagem ao lado esquerdo do texto*/
+	margin: 0 20px 20px 0;
+}
+
+.mapa{
+	padding: 2em 0;
+	background: linear-gradient(#FEFEFE, #888888); /*Cria um degradê na página com as cores informadas.*/
+}
+
+.mapaconteudo{
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+.mapa p, h3 {
+	margin:  0 0 1 em;
+	text-align: center;
+	padding: 15px;
+}
+
+.titulo-3{
+	font-size: 2em;
+
+}
+
+.video{
+	width: 560px;
+	margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudobeneficios, .mapaconteudo, .video {
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+}
+
+
+
+/*Tag "header background: #BBBBBB" com fundo cinza.
+Tag ".caixa position: relative;
+	width: 940px;
+	margin:  0 auto;" centraliza na página todas as informações do bloco>
+Tag "nav li display: inline" com o cabelho um ao lado do outro.>
+Tag "nav li margin: 0 0 0 15px" espaçamento entre palavras.>
+Tag "nav a text-transform: uppercasecom"as palavras todas em maiúsculo.>
+Tag "nav a color:  #000000" as palavras todas preto.>
+Tag "nav a font-weight: bold" as palavras todas negrito.>
+Tag "nav a font-size: 22px" tamanho das letras.>
+Tag "nav a text-decoration: none:" retira o subinhado.>*
+Tag "nav a:hover" aplica uma outra cor e sublinha ao passar o mouse por cima das palavras>*
+Tag ".produtos li: hover" aplica uma outra cor ao passar o mouse por cima das bordas>*
+Tag ".produtos li:active" aplica uma outra cor ao clicar com mouse por cima das bordas>*
+Tag ".produtos li:hover h2" altera o tamnho das fontes quando o mouse passa por cima>*
+Tag "border:  2px solid #000000" adciona uma borda preta>
+Tag "border-radius: 10px" arredonda a borda da borda>
+Tag "footer" texto e imagem alinhado no centro do rodapé>
+Tag ".copyright" alteração da cor, tamanho e margem do texto do rodapé
+*/
+
